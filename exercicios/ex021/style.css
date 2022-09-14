@@ -1,0 +1,45 @@
+body{
+    border: 2px solid;
+    margin: none;
+    padding: 10px;
+  
+}
+
+header{
+   
+    border: 2px solid darkblue;
+    align-content: center;
+   
+}
+
+nav{
+    text-align:  center;
+    border:dashed 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+main{
+    display: inline-block;
+    margin-top: 5px;
+    border: 2px solid darkblue;
+}
+
+
+footer{
+    margin-top: 5px;
+    border: 2px solid darkblue;
+}
+
+article{
+
+    text-align:  center;
+    border:dashed 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.asideex{
+   display: left;
+}

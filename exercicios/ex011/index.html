@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de mídia</title>
+</head>
+<body>
+    <h1>Teste de imagens flexiveies</h1>
+    <p>Usaremos imagens que irão se alternar de acordo com o tamanho da tela atraves da tag picture e source</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="img/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-p.png" alt="imagem flexivel" srcset="">
+    </picture>
+    <h1>Teste de  arquivos de audio</h1>
+    <audio preload="metadata"  controls autoplay loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        
+        
+    </audio>
+    <p>seu navegador nao suporta audio <a href="media/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">aqui</a></p>
+</body>
+</html>

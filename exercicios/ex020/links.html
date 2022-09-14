@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        a:visited{
+
+            color: rosybrown;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: line-through;
+        }
+
+        a:active{
+            color:blueviolet;
+        }
+
+        .especial::before{
+            content: '->';
+        }
+
+
+        .especial::after{
+            content: '<-';
+        }
+        p::first-letter{
+           color: orange;
+           font-size: 30px;
+           font-weight: bold;
+           background-color: black;
+           padding: 5px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        div>ul{
+            display: none;
+        }
+
+        div:hover >ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://github.com/brenoviard" target="_blank" class="especial">Repositório Github</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+    </ul>
+    
+    <h2>teste de paragrafo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque enim sunt voluptatibus quidem impedit, suscipit eum sit amet aut sint vel? Provident quam delectus ratione minima asperiores! Iusto, provident? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus corporis quidem sint dolorem porro deserunt blanditiis quisquam veritatis dolor, quibusdam, et architecto expedita ea quia voluptas! Enim distinctio velit maiores.</p>
+
+    <div>Menu
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
