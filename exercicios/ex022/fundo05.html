@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            
+            
+        }
+        div.img{
+            border: 1px solid black;
+            height: 285px;
+            width: 425px;
+            background-image: url(imagens/wallpaper003.jpg);
+        }
+        div.top{
+            display: inline-block;
+        }
+
+        div.center{
+            display: inline-block;
+        }
+        div.bottom{
+            display: inline-block;
+        }
+        div#div1{
+            background-position: left top;
+        }
+        div#div2{
+            background-position: center top;
+        }
+        div#div3{
+            background-position: right top;
+        }
+        div#div4{
+            background-position: left center;
+        }
+        div#div5{
+            background-position: center;
+        }
+        div#div6{
+            background-position: right center;
+        }
+        div#div7{
+            background-position: left bottom;
+        }
+        div#div8{
+            background-position: center bottom;
+        }
+        div#div9{
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+   
+        <ul>
+            <li>
+                <div id="div1" class="img top"></div>
+                <div id="div2" class="img top"></div>
+                <div id="div3" class="img top"></div>
+            </li>
+            <li>
+                <div id="div4" class="img center"></div>
+                <div id="div5" class="img center"></div>
+                <div id="div6" class="img center"></div>
+            </li>
+            <li>
+                <div id="div7" class="img bottom"></div>
+                <div id="div8" class="img bottom"></div>
+                <div id="div9" class="img bottom"></div>
+            </li>
+        </ul>
+
+
+</body>
+</html>
