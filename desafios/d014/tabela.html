@@ -6,156 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
             border-collapse: collapse;
-            width: 200px;
         } 
         
-        
-        .title{
-            background-color: gray;
-            color: white;
-            border: 1px solid black;
-        } 
-
-        .num{
-            text-align: center;
-       
-        }
-       
-        .interno >td{
-            border: none;
-        }
         th, td{
-          border: 1px solid black;
+            border: 1px solid black;
         }
-
-        
+        .centro{
+            text-align: center;
+        }
+       .inverso{
+        background-color: #7e7e7e;
+        color: white;
+       }
+       .realce{
+        font-weight: bolder;
+       }
+       .esquerda{
+        text-align: left;
+       }
         
     </style>
 </head>
 <body>
     <table>
-
-        <colgroup class="colunas">
-            <col class="ara">
-            <col class="disciplina">
-            <col class="notas" >
-            <col class="media"> 
-        </colgroup>
         <thead>
-            <tr>
-                <th scope="col" class="title">Área</th>
-                <th scope="col" class="title">Disciplinas</th>
-                <th>
-                    <table class="interno">
-                        <tr>
-                            <th colspan="2" scope="colgroup" class="title">Notas</th>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup"scope="col" class="title">Nota 1</th>
-                            <th scope="colgroup"scope="col" class="title">Nota 2</th>
-                        </tr>
-                    </table>
-                </th>
-                <th scope="col" class="title">
-                    Média
-                </th>
+            <tr class="inverso">
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
+            <tr class="inverso">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+                        
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
-                <td>
-                <table>
-                    <tr>
-                        <td class="num">0.0</td>
-                        <td class="num">0.0</td>
-                    </tr>
-                </table>
-                </td>
-                <td class="num">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
             <tr>
-            
                 <td>Física</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="num">0.0</td>
-                            <td class="num">0.0</td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="num">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
             <tr>
-            
                 <td>Química</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="num" >0.0</td>
-                            <td class="num">0.0</td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="num">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
-            <tr>
-            
+            <tr>            
                 <td>Biologia</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="num">0.0</td>
-                            <td class="num">0.0</td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="num">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
-            <tr>
-                <th colspan="3" scope="row" class="title">Media Exatas</th>
-                <td class="num" >0.0 </td>
+            <tr class="inverso">
+                <th colspan="4" scope="row" class="esquerda">Media Exatas</th>
+                <td class="centro realce" >0.0 </td>
             </tr>
             <tr>
                 <th rowspan="2" >Humanas</th>
                 <td>História</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="num">0.0</td>
-                            <td class="num">0.0</td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="num" >0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
             <tr>
-            
                 <td>Geografia</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="num" >0.0</td>
-                            <td class="num">0.0</td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="num" >0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
-            <tr>
-                <th colspan="3" scope="row" class="title" >Media Humanas</th>
-                <td class="num" >0.0 </td>
+            <tr class="inverso">
+                <th colspan="4" scope="row" class="esquerda" >Media Humanas</th>
+                <td class="centro realce" >0.0 </td>
             </tr>
         </tbody>
         
