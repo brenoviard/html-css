@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formilário</h1>
+    <form action="cadastro.php">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="M">
+            <label for="masc">Masculino</label><br>
+            <input type="radio" name="sexo" id="fem" value="F">
+            <label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+        <legend>Adicionais:</legend>
+        
+        <input type="checkbox" name="Salsicha" id="Salsicha">
+        <label for="Salsicha" >Salsicha:</label>
+       
+        <input type="checkbox" name="Carne" id="Carne">
+        <label for="Carne" >Carne:</label>
+        
+        <input type="checkbox" name="Bacon" id="Bacon">
+        <label for="Bacon" Salsicha>Bacon:</label>
+       
+        <input type="checkbox" name="Ovo" id="Ovo">
+        <label for="Ovo" Salsicha>Ovo:</label>
+
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
