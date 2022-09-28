@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Página com Exempos de Formulários</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome" >Nome:</label>
+                <input type="text" name="" id="nome" required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email"><br>
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="" id="tel" pattern="^\(\d{2}\)\d{5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"><br>
+                <p>Sexo: <!--Apenas uma opção-->
+                    <input type="radio" name="sexo" id="masc" value="Masculino">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sexo" id="fem" value="Feminino">
+                    <label for="fem">Feminino</label>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Adicionais</legend>
+                <input type="checkbox" name="" id="leite-ninho">
+                <label for="leite-ninho">Leite em pó</label>
+                <input type="checkbox" name="" id="pacoca">
+                <label for="pacoca">Paçoca</label>
+                <input type="checkbox" name="" id="oreo">
+                <label for="oreo">Oreo</label>
+                <input type="checkbox" name="" id="farlac">
+                <label for="farlac">Farinha Láctea</label>
+               
+            </fieldset>
+            <fieldset>
+                <legend>Especiais</legend>
+                <label for="satis">Satisfação:</label>
+                <input type="range" name="" id="satis" min="0" max="10"  value="0" oninput="nivel.innerHTML= Number(satis.value)">
+                <label for="nivel"></label>
+                <output id="nivel">0
+                </output><br>
+                <label for="cor">Cor favorita: </label>
+                <input type="color" name="" id="cor"><br>
+                <label for="arq">Arquivo: </label>
+                <input type="file" name="" id="arq"><br>
+                <label for="data">Data: </label>
+                <input type="date" name="" id="data">
+                <input type="datetime-local" name="" id=""><br>
+                <label for="senha">Senha</label>
+                <input type="password" name="" id="senha"><br>
+
+                <label for="gsearch">Search Google: </label>
+                <input type="search" name="gsearch" id="">
+
+            </fieldset>
+
+            <fieldset>
+                <fieldset>
+                    <legend>Tipos de listas de seleção</legend>
+                <div>
+                    <label for="cont">Continente:</label>
+                    <select name="continente" id="cont">
+                        <option value="" selected>---Escolha uma opção---</option>
+                        <optgroup label="América">
+                            <option value="NA">América do Note</option>
+                            <option value="CA">América Central</option>
+                            <option value="SA">América do Sul</option>
+                        </optgroup>
+                        <option value="EU">Europa</option>
+                        <option value="AF">África</option>
+                        <option value="AS">Ásia</option>
+                        <option value="OC">Oceania</option>
+                    </select>
+
+                </div>
+                
+                    <div>
+                        <label for="prof">Profissão: </label>
+                        <input type="text" name="" id="prof" list="listprof">
+                        <datalist id="listprof">
+                            <option >Contador</option>
+                            <option>Médico</option>
+                            <option >Engenheiro</option>
+                        </datalist>
+                    </div>
+                </fieldset>
+            </fieldset>
+        </div>
+
+        <div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Deixe-nos uma mensagem</legend>
+                <label for="msg">Mensagem:</label><br>
+                <textarea name="" id="msg" cols="30" rows="10"></textarea>
+                
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
